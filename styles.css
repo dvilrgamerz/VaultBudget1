@@ -34,24 +34,27 @@ button:disabled { cursor: not-allowed; opacity: 0.55; }
 a { color: inherit; }
 
 .stage {
-  min-height: 100vh;
+  min-height: 100dvh !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 0 !important;
 }
+
 .app {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  min-height: 100vh;
-  overflow: hidden;
-  border: none;
-  border-radius: 0;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100dvh !important;
+  min-height: 100dvh !important;
+  overflow: hidden !important;
+  border: none !important;
+  border-radius: 0 !important;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 22rem),
-    var(--bg);
+    var(--bg) !important;
 }
+
 .screen {
   height: calc(100% - 94px);
   overflow-y: auto;
@@ -285,17 +288,17 @@ label { display: grid; gap: 6px; color: var(--muted); font-size: 0.74rem; font-w
 /* PC, Laptop, and Tablet Adaptations */
 @media (min-width: 768px) {
   .stage {
-    padding: 24px;
+    padding: 24px !important;
   }
 
   .app {
-    width: 100%;
-    max-width: 1024px;
-    height: calc(100vh - 48px);
-    min-height: 720px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 32px;
-    box-shadow: 0 38px 100px rgba(0, 0, 0, 0.54);
+    width: 100% !important;
+    max-width: 1024px !important;
+    height: calc(100vh - 48px) !important;
+    min-height: 720px !important;
+    border: 1px solid rgba(255, 255, 255, 0.14) !important;
+    border-radius: 32px !important;
+    box-shadow: 0 38px 100px rgba(0, 0, 0, 0.54) !important;
   }
 
   .tabs {
