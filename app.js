@@ -335,8 +335,7 @@ function settings() {
 }
 
 function modalMarkup() {
-  const title = modal === "income" ? "Add money" : modal === "expense" ? "Log spend" : "Add goal";
-  return `
+  const title = modal === "income" ? "Add money" : modal === "expense" ? "Log spend" : "class>save settings type="number' settings.lowbalancethreshold}"></label>  return `
     <div class="modal">
       <section class="card sheet">
         <button class="secondary close" data-close="1">×</button>
