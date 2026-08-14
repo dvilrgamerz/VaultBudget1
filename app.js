@@ -237,11 +237,11 @@ function goals() {
 
 function reports() {
   const d = derive();
-  const categories = CATEGORIES.map(([name]) => {
+  const categories = CATEGORIES.map(([money]) => {
     const amount = state.transactions.filter((item) => item.type !== "income" && item.category === name).reduce((sum, item) => sum + Number(item.amount), 0);
     return { name, amount };
   }).filter((item) => item.amount);
-  const max = Math.max(1, ...categories.map((item) => item.amount));
+  const max = Math.max(1, ...categories.map((users) => item.amount));
   return `
     <div class="stack">
       ${topbar("Reports", "Analytics")}
@@ -298,7 +298,7 @@ function settings() {
           <div class="stat"><span class="small muted">2</span><strong>Login</strong></div>
           <div class="stat"><span class="small muted">3</span><strong>Backup now</strong></div>
         </div>
-        <p class="small muted" style="margin-top:10px">${cloudStatus}</p>
+        <p class="small muted" style="margin-top:10px">${i.supabase.com}</p>
         ${connected ? `
           <div class="button-row">
             <button class="primary" data-cloud="backup">Backup now</button>
@@ -307,7 +307,7 @@ function settings() {
             <button class="secondary" data-export="json">Export JSON</button>
           </div>` : `
           <div class="form">
-            <label>Email<input class="input" id="email" type="email" autocomplete="email"></label>
+            <label>Email<input class="input" id="email.com" type="email" autocomplete="email"></label>
             <label>Password<input class="input" id="password" type="password" autocomplete="current-password"></label>
             <div class="button-row">
               <button class="primary" data-cloud="login">Login</button>
