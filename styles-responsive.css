@@ -1,0 +1,23 @@
+@media (max-width: 520px) {
+  .metric-grid.report-metrics { grid-template-columns: 1fr 1fr; }
+  .metric-grid.report-metrics .metric:last-child { grid-column: 1 / -1; }
+  .transaction-row:has(.row-actions) { grid-template-columns: 42px minmax(0,1fr) auto; }
+  .transaction-row .row-actions { grid-column: 2 / -1; justify-content: flex-end; }
+  .goal-actions { grid-template-columns: minmax(90px,1fr) 1fr; }
+  .goal-actions .danger { grid-column: span 2; }
+}
+@media (min-width: 760px) {
+  .stage { padding: 24px; }
+  .app { width: min(100%,1100px); min-height: calc(100dvh - 48px); border: 1px solid var(--line); border-radius: 30px; overflow: hidden; box-shadow: 0 38px 100px rgba(0,0,0,.42); background: rgba(5,9,20,.7); }
+  .screen { height: calc(100dvh - 48px); min-height: 720px; padding: 28px 28px 116px; }
+  .tabs { position: absolute; left: 50%; right: auto; width: min(620px,calc(100% - 56px)); transform: translateX(-50%); bottom: 22px; }
+  .metric-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .insight-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .modal { position: absolute; border-radius: 30px; place-items: center; }
+}
+@media (min-width: 980px) {
+  .screen > .stack { width: min(100%,920px); margin: 0 auto; }
+  .hero-card { padding: 24px; }
+  .balance { font-size: 4.5rem; }
+}
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; } }
