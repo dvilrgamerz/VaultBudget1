@@ -9,6 +9,10 @@
 </p>
 
 <p align="center">
+  <a href="https://vaultbudget1.netlify.app"><strong>🚀 Live Demo — vaultbudget1.netlify.app</strong></a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111827" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Data-Local_First-48DF94?style=for-the-badge" alt="Local first" />
   <img src="https://img.shields.io/badge/Supabase-Optional-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase optional" />
