@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img" aria-labelledby="title desc">
+  <title id="title">VaultBudget</title>
+  <desc id="desc">Local-first budgeting dashboard with optional secure cloud backup</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#020817"/>
+      <stop offset="55%" stop-color="#0B1C38"/>
+      <stop offset="100%" stop-color="#18345A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0%" stop-color="#F8D56B"/>
+      <stop offset="100%" stop-color="#F4B83F"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="420" rx="34" fill="url(#bg)"/>
+  <circle cx="1180" cy="50" r="240" fill="#5EA3FF" opacity=".08"/>
+  <circle cx="1260" cy="350" r="220" fill="#48DF94" opacity=".06"/>
+  <circle cx="210" cy="60" r="190" fill="#F8D56B" opacity=".08"/>
+  <g transform="translate(110 104)" filter="url(#shadow)">
+    <rect width="170" height="170" rx="46" fill="url(#gold)"/>
+    <path d="M48 54h74c8 0 14 6 14 14v34c0 29-18 53-51 66-33-13-51-37-51-66V68c0-8 6-14 14-14Z" fill="#081426"/>
+    <path d="M61 77h48v17H61zm0 31h48v17H61z" fill="#F8D56B"/>
+    <circle cx="118" cy="116" r="8" fill="#48DF94"/>
+  </g>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="335" y="178" fill="#F8FBFF" font-size="72" font-weight="800">VaultBudget</text>
+    <text x="338" y="230" fill="#9FB1C9" font-size="28" font-weight="500">Local-first budgeting. Optional cloud backup.</text>
+    <g transform="translate(338 272)">
+      <rect x="0" y="0" width="185" height="48" rx="24" fill="#F8D56B"/>
+      <text x="92.5" y="31" text-anchor="middle" fill="#07111F" font-size="19" font-weight="800">TRACK SPENDING</text>
+      <rect x="200" y="0" width="170" height="48" rx="24" fill="#48DF94" opacity=".16" stroke="#48DF94" stroke-opacity=".45"/>
+      <text x="285" y="31" text-anchor="middle" fill="#6EE7A8" font-size="19" font-weight="700">BUILD GOALS</text>
+      <rect x="385" y="0" width="190" height="48" rx="24" fill="#5EA3FF" opacity=".14" stroke="#5EA3FF" stroke-opacity=".4"/>
+      <text x="480" y="31" text-anchor="middle" fill="#7DB6FF" font-size="19" font-weight="700">OWN YOUR DATA</text>
+    </g>
+  </g>
+</svg>
