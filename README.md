@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://vaultbudget1.netlify.app"><strong>🚀 Live Demo — vaultbudget1.netlify.app</strong></a>
+  <a href="https://vault-budget-ai.netilfy.app"><strong>🚀 Live Demo — vaultbudget1.netlify.app</strong></a>
 </p>
 
 <p align="center">
