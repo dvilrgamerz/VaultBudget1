@@ -1,3 +1,7 @@
+<p align="center"><a href="https://github.com/dvilrgamerz"><strong>← DVILR Developer Portfolio</strong></a> · <a href="https://github.com/dvilrgamerz?tab=repositories"><strong>Explore more projects</strong></a></p>
+
+---
+
 <p align="center">
   <img src="./assets/vaultbudget-banner.svg" alt="VaultBudget — local-first budgeting dashboard" width="100%" />
 </p>
