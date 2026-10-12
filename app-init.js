@@ -11,7 +11,13 @@ async function importBackup(event) {
   catch (error) { alert(error.message || "Could not import this backup."); }
   finally { event.target.value = ""; }
 }
-function csv(value) { return `"${String(value ?? "").replaceAll('"','""')}"`; }
+function csv(value) {
+  let text = String(value ?? "");
+  // Spreadsheet apps may execute formulas even when a CSV field is quoted.
+  // Prefix dangerous cells so notes/categories always open as literal text.
+  if (/^\s*[=+@-]/.test(text)) text = "'" + text;
+  return '"' + text.replaceAll('"', '""') + '"';
+}
 function eh(value) { return String(value ?? "").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;"); }
 function ea(value) { return eh(value); }
 
