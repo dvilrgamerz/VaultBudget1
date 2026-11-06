@@ -56,6 +56,10 @@ VaultBudget is **local-first**.
 
 > VaultBudget is a personal project and not a bank, financial institution, or financial-advice service.
 
+### Existing optional cloud installations
+
+A legacy SQL setup previously included an unnecessary anonymous `SELECT` grant on `vault_states`. The repository setup now omits it. **If you previously applied that SQL to a Supabase project, run [`security/revoke-anonymous-cloud-access.sql`](security/revoke-anonymous-cloud-access.sql) once in that project’s SQL Editor** and verify that `anonymous_can_select_vault_states` returns `false`. This only changes cloud database permissions; it does not move, delete, or upload data in your browser. VaultBudget remains usable entirely offline without an account. Do not interpret a committed SQL change as proof a deployed database has been updated.
+
 ## 🧱 Architecture
 
 ```text
