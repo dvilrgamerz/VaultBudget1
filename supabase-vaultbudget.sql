@@ -105,7 +105,7 @@ revoke all on table public.vault_settings from anon;
 revoke all on table public.vault_transactions from anon;
 revoke all on table public.vault_goals from anon;
 revoke all on table public.vault_recurring_expenses from anon;
-grant select on table public.vault_states to anon;
+-- Anonymous clients must not read private budgeting data.
 
 revoke all on table public.vault_states from authenticated;
 revoke all on table public.vault_profiles from authenticated;
