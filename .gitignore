@@ -1,0 +1,23 @@
+# Never commit private credentials or local app data.
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+*.sqlite
+*.sqlite3
+*.db
+
+# Local dependencies, build output, and deployment state.
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.netlify/
+.vercel/
+*.log
+.DS_Store
+Thumbs.db
